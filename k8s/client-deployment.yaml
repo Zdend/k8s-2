@@ -16,8 +16,10 @@ spec:
                 - name: client
                   image: zdend/docker-5-client
                   resources:
+                        requests:
+                            cpu: "100m"
                         limits:
                             memory: "128Mi"
-                            cpu: "500m"
+                            cpu: "100m"
                   ports:
                     - containerPort: 3000
